@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import Button from "./Button";
 import SafeImage from "./SafeImage";
+import { asset } from "../utils/asset";
 
 const container: Variants = {
   hidden: {},
@@ -85,7 +86,7 @@ export default function Hero() {
         >
           <div className="relative aspect-[4/5] max-w-md mx-auto rounded-[2rem] overflow-hidden shadow-xl shadow-ink/10 ring-1 ring-champagne">
             <SafeImage
-              src="/images/products/traditional/trad-tassel-necklace-2.webp"
+              src={asset("/images/products/traditional/trad-tassel-necklace-2.webp")}
               alt="Handmade pearl tassel bhikbali necklace by Nicy Collection"
               className="w-full h-full object-cover"
               loading="eager"

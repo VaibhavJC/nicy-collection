@@ -5,6 +5,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import { siteConfig } from "../config/site";
 import { getGeneralEnquiryUrl } from "../utils/whatsapp";
 import SafeImage from "./SafeImage";
+import { asset } from "../utils/asset";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -45,7 +46,7 @@ export default function Navbar() {
       >
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <SafeImage
-            src="/images/logo/nicy-logo-thumb.webp"
+            src={asset("/images/logo/nicy-logo-thumb.webp")}
             alt={`${siteConfig.brandName} logo`}
             className="h-11 w-11 rounded-full object-cover"
             loading="eager"

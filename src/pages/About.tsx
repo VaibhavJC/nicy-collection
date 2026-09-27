@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Layout from "../components/Layout";
 import Reveal from "../components/Reveal";
 import SafeImage from "../components/SafeImage";
+import { asset } from "../utils/asset";
 import FeatureCard from "../components/FeatureCard";
 import Button from "../components/Button";
 import { siteConfig } from "../config/site";
@@ -45,7 +46,7 @@ export default function About() {
 
           <Reveal delay={0.1} className="relative aspect-[4/5] rounded-[2rem] overflow-hidden ring-1 ring-champagne">
             <SafeImage
-              src="/images/products/lippan/lippan-peacock-1.webp"
+              src={asset("/images/products/lippan/lippan-peacock-1.webp")}
               alt="Handmade Lippan peacock wall décor by Nicy Collection"
               className="w-full h-full object-cover"
             />

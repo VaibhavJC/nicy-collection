@@ -13,6 +13,7 @@ import GalleryGrid from "../components/GalleryGrid";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
 import SafeImage from "../components/SafeImage";
+import { asset } from "../utils/asset";
 import { categories } from "../data/categories";
 import { occasions } from "../data/occasions";
 import { getFeaturedProducts, products } from "../data/products";
@@ -131,7 +132,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <Reveal className="order-2 lg:order-1 relative aspect-[4/5] rounded-[2rem] overflow-hidden ring-1 ring-champagne">
             <SafeImage
-              src="/images/products/wedding/ring-platter-1.webp"
+              src={asset("/images/products/wedding/ring-platter-1.webp")}
               alt="Handmade floral engagement ring platter by Nicy Collection"
               className="w-full h-full object-cover"
             />

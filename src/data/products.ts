@@ -1,5 +1,6 @@
 import type { CategorySlug } from "./categories";
 import type { OccasionSlug } from "./occasions";
+import { asset } from "../utils/asset";
 
 export interface ProductImage {
   full: string;
@@ -26,8 +27,8 @@ export interface Product {
 
 function img(path: string, alt: string): ProductImage {
   return {
-    full: `/images/products/${path}.webp`,
-    thumb: `/images/products/${path}-thumb.webp`,
+    full: asset(`/images/products/${path}.webp`),
+    thumb: asset(`/images/products/${path}-thumb.webp`),
     alt,
   };
 }

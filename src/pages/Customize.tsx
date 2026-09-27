@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import CustomOrderForm from "../components/CustomOrderForm";
 import Reveal from "../components/Reveal";
 import SafeImage from "../components/SafeImage";
+import { asset } from "../utils/asset";
 import { siteConfig } from "../config/site";
 import { setPageMeta } from "../utils/meta";
 
@@ -33,7 +34,7 @@ export default function Customize() {
 
             <div className="relative mt-4 aspect-[4/3] rounded-2xl overflow-hidden ring-1 ring-champagne hidden lg:block">
               <SafeImage
-                src="/images/products/traditional/trad-nath-1.webp"
+                src={asset("/images/products/traditional/trad-nath-1.webp")}
                 alt="Handmade pearl and kundan nath by Nicy Collection"
                 className="w-full h-full object-cover"
               />

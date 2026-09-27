@@ -1,3 +1,4 @@
+import { asset } from "../utils/asset";
 export type CategorySlug =
   | "flower-jewellery"
   | "pearl-jewellery"
@@ -30,7 +31,7 @@ export const categories: Category[] = [
       "Haldi / Mehendi Jewellery",
       "Customised Floral Designs",
     ],
-    image: "/images/products/pearl/pearl-drop-earrings-1-thumb.webp",
+    image: asset("/images/products/pearl/pearl-drop-earrings-1-thumb.webp"),
   },
   {
     slug: "pearl-jewellery",
@@ -45,7 +46,7 @@ export const categories: Category[] = [
       "Traditional Pearl Jewellery",
       "Customised Sets",
     ],
-    image: "/images/products/pearl/pearl-kundan-necklace-1-thumb.webp",
+    image: asset("/images/products/pearl/pearl-kundan-necklace-1-thumb.webp"),
   },
   {
     slug: "traditional-jewellery",
@@ -61,7 +62,7 @@ export const categories: Category[] = [
       "Traditional Earrings",
       "Other Maharashtrian Jewellery",
     ],
-    image: "/images/products/traditional/trad-nath-1-thumb.webp",
+    image: asset("/images/products/traditional/trad-nath-1-thumb.webp"),
   },
   {
     slug: "lippan-art",
@@ -75,7 +76,7 @@ export const categories: Category[] = [
       "Handmade Decorative Pieces",
       "Customised Lippan Artwork",
     ],
-    image: "/images/products/lippan/lippan-peacock-1-thumb.webp",
+    image: asset("/images/products/lippan/lippan-peacock-1-thumb.webp"),
   },
   {
     slug: "engagement-wedding",
@@ -90,7 +91,7 @@ export const categories: Category[] = [
       "Wedding Accessories",
       "Customised Wedding Décor",
     ],
-    image: "/images/products/wedding/ring-platter-1-thumb.webp",
+    image: asset("/images/products/wedding/ring-platter-1-thumb.webp"),
   },
   {
     slug: "home-decor",
@@ -104,7 +105,7 @@ export const categories: Category[] = [
       "Festive Décor",
       "Customised Décor Pieces",
     ],
-    image: "/images/products/lippan/lippan-peacock-2-thumb.webp",
+    image: asset("/images/products/lippan/lippan-peacock-2-thumb.webp"),
   },
 ];
 
