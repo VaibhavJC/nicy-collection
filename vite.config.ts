@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 const REPO_NAME = 'nicy-collection'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? `/${REPO_NAME}/` : '/',
+  base: '/',
   plugins: [react(), tailwindcss()],
   build: {
     outDir: 'dist',
