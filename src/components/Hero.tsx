@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import Button from "./Button";
 import SafeImage from "./SafeImage";
+import PetalField from "./PetalField";
 import { asset } from "../utils/asset";
 
 const container: Variants = {
@@ -31,6 +32,7 @@ export default function Hero() {
         aria-hidden="true"
         className="absolute top-40 -left-20 w-64 h-64 rounded-full bg-rose/10 blur-3xl -z-10"
       />
+      <PetalField count={6} className="-z-10" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div

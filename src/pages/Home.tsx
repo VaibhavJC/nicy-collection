@@ -10,6 +10,7 @@ import OccasionCard from "../components/OccasionCard";
 import ProductCard from "../components/ProductCard";
 import FeatureCard from "../components/FeatureCard";
 import GalleryGrid from "../components/GalleryGrid";
+import DevotionVideoSection from "../components/DevotionVideoSection";
 import Reveal from "../components/Reveal";
 import Button from "../components/Button";
 import SafeImage from "../components/SafeImage";
@@ -68,6 +69,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Handcrafted With Devotion — ambient video feature */}
+      <DevotionVideoSection />
 
       {/* Featured Products */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-16 sm:py-24">

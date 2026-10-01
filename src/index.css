@@ -70,3 +70,37 @@ select:focus-visible {
 .text-balance {
   text-wrap: balance;
 }
+
+/* Decorative petal drift — used sparingly, see PetalField.tsx */
+.petal {
+  will-change: transform, opacity;
+  animation-name: petal-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  filter: blur(0.2px);
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-10%) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.28;
+  }
+  92% {
+    opacity: 0.22;
+  }
+  100% {
+    transform: translateY(115vh) translateX(var(--petal-drift, 20px)) rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .petal {
+    animation: none;
+    opacity: 0.16 !important;
+    transform: translateY(20%);
+  }
+}
